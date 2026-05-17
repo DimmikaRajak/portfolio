@@ -1,4 +1,4 @@
-# Girl Developer Portfolio
+# MY Portfolio
 
 A beautiful, elegant, multi-page React portfolio website designed specifically for girl developers. This portfolio features a soft, editorial aesthetic with a complete modern tech stack.
 
