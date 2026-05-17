@@ -1,0 +1,110 @@
+.photo-card-wrapper {
+  position: relative;
+  width: 260px;
+  height: 330px;
+  margin: 0 auto;
+}
+
+.photo-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 28px 28px 80px 28px;
+  overflow: hidden;
+  border: 0.5px solid var(--color-primary-border);
+  box-shadow: 0 16px 48px rgba(196, 96, 122, 0.12);
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(61, 26, 46, 0.8), transparent);
+  padding: 24px 16px;
+  color: white;
+  text-align: center;
+}
+
+.photo-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.photo-role {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Floating Badges */
+.floating-badge {
+  position: absolute;
+  z-index: 2;
+}
+
+.badge-pos-top-right {
+  top: -22px;
+  right: -12px;
+}
+
+.badge-pos-left-top {
+  top: 20px;
+  left: -18px;
+}
+
+.badge-pos-right-middle {
+  top: 150px;
+  right: -28px;
+}
+
+.badge-pos-bottom {
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.badge-stack {
+  white-space: nowrap;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pulsing-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-green);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 2s infinite;
+}
+
+.badge-label {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.badge-value {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.badge-purple .badge-value {
+  color: var(--color-purple);
+}

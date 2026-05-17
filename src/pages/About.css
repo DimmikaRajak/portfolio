@@ -1,0 +1,94 @@
+.about-hero {
+  padding: 48px 40px;
+  border-top: none !important;
+}
+
+.about-hero-grid {
+  gap: 48px;
+}
+
+.about-quote {
+  display: flex;
+  align-items: center;
+}
+
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  border-left: 3px solid var(--color-primary);
+  padding-left: 24px;
+}
+
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-journey {
+  padding: 64px 40px;
+}
+
+.journey-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journey-content p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.about-highlights {
+  padding: 64px 40px;
+}
+
+.highlights-grid {
+  gap: 32px;
+}
+
+.highlight-card {
+  padding: 28px;
+  background: var(--color-primary-light);
+  border: 0.5px solid var(--color-primary-border);
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(196, 96, 122, 0.1);
+}
+
+.highlight-card h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--color-primary-dark);
+}
+
+.highlight-card p {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .quote-text {
+    font-size: 22px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}

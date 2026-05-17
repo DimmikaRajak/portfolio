@@ -1,0 +1,59 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 0.5px solid var(--color-primary-border);
+  background: var(--color-primary-light);
+  color: var(--color-text-primary);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.badge-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-default {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-border);
+  color: var(--color-text-primary);
+}
+
+.badge-green {
+  background: var(--color-green-light);
+  border-color: var(--color-green-border);
+  color: var(--color-green);
+}
+
+.badge-pink {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-border);
+  color: var(--color-primary-dark);
+}
+
+.badge-purple {
+  background: var(--color-purple-light);
+  border-color: var(--color-purple-border);
+  color: var(--color-purple);
+}
+
+.badge-amber {
+  background: var(--color-amber-light);
+  border-color: var(--color-amber-border);
+  color: var(--color-amber);
+  font-style: italic;
+}
+
+.badge-pos-floating {
+  position: absolute;
+  z-index: 10;
+}

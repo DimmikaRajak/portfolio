@@ -1,0 +1,64 @@
+.skill-card {
+  background: white;
+  border: 0.5px solid var(--color-primary-border);
+  border-radius: 14px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(196, 96, 122, 0.1);
+}
+
+.skill-card-learning {
+  background: var(--color-purple-light);
+  border-color: var(--color-purple-border);
+}
+
+.skill-icon {
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.skill-card-learning .skill-icon {
+  color: var(--color-purple);
+}
+
+.skill-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: var(--color-text-primary);
+}
+
+.skill-card-learning .skill-title {
+  font-style: italic;
+  color: var(--color-purple);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: var(--color-purple-light);
+  border: 0.5px solid var(--color-purple-border);
+  color: var(--color-purple);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+
+.skill-card-learning .skill-tag {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(107, 42, 122, 0.2);
+  color: var(--color-purple);
+  font-style: italic;
+}

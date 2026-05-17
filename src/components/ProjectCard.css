@@ -1,0 +1,102 @@
+.project-card {
+  border-radius: 16px;
+  border: 0.5px solid var(--color-primary-border);
+  overflow: hidden;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(196, 96, 122, 0.12);
+}
+
+.project-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+}
+
+.live-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--color-green);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.project-type-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary-dark);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.project-body {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.project-description {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  background: var(--color-purple-light);
+  color: var(--color-purple);
+  border: 0.5px solid var(--color-purple-border);
+}
+
+.tag-amber {
+  background: var(--color-amber-light);
+  color: var(--color-amber);
+  border-color: var(--color-amber-border);
+  font-style: italic;
+}
+
+.project-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.project-actions .btn {
+  flex: 1;
+  font-size: 11px;
+  padding: 8px 12px;
+  justify-content: center;
+}

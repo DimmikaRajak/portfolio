@@ -1,0 +1,121 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 48px 40px;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  border-top: none !important;
+  padding-top: 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  background: var(--color-primary-light);
+  border: 0.5px solid var(--color-primary-border);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--color-text-primary);
+  animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+.badge-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+.hero-left h1 {
+  animation: fadeSlideIn 0.6s ease-out forwards;
+  max-width: 400px;
+}
+
+.hero-intro {
+  max-width: 300px;
+  animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+.hero-intro strong {
+  color: var(--color-primary-dark);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+.hero-buttons .btn {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: var(--color-purple-light);
+  border: 0.5px solid var(--color-purple-border);
+  color: var(--color-purple);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+}
+
+.tech-tag-learning {
+  display: inline-block;
+  background: var(--color-amber-light);
+  border: 0.5px solid var(--color-amber-border);
+  color: var(--color-amber);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-intro {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
